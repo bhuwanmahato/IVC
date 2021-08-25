@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:IVC.Pages"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            x:Class="IVC.MainPage" BarBackgroundColor="#2D2D2D" BarTextColor="#C0C0C0" SelectedTabColor="#89B0F3">
+    <NavigationPage Title="Home" BarBackgroundColor="#272727" IconImageSource="@drawable/cal">
+        <x:Arguments>
+            <local:Home/>
+        </x:Arguments>
+    </NavigationPage>
+    <local:View IconImageSource="@drawable/vi"/>
+</TabbedPage>

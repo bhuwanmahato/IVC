@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IVC.CalculatorPage2" BackgroundColor="#000000">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout x:Name="mainstack">
+                <StackLayout Padding="20">
+                    <Label Text="Enter Average Income" FontSize="Title" TextColor="#EAEAEA"
+                    HorizontalOptions="CenterAndExpand" />
+                    <Entry Placeholder="Year 1" x:Name="year1txt" TextColor="#C0C0C0" Keyboard="Numeric" PlaceholderColor="#AFAFAF"/>
+                    <Entry Placeholder="Year 2" x:Name="year2txt" TextColor="#C0C0C0" Keyboard="Numeric" PlaceholderColor="#AFAFAF"/>
+                    <Entry Placeholder="Year 3" x:Name="year3txt" TextColor="#C0C0C0" Keyboard="Numeric" PlaceholderColor="#AFAFAF"/>
+                    <Entry Placeholder="Year 4" x:Name="year4txt" TextColor="#C0C0C0" Keyboard="Numeric" PlaceholderColor="#AFAFAF"/>
+                    <Entry Placeholder="Year 5" x:Name="year5txt" TextColor="#C0C0C0" Keyboard="Numeric" PlaceholderColor="#AFAFAF"/>
+                    <Entry Placeholder="Year 6" x:Name="year6txt" TextColor="#C0C0C0" Keyboard="Numeric" PlaceholderColor="#AFAFAF"/>
+                    <Entry Placeholder="Year 7" x:Name="year7txt" TextColor="#C0C0C0" Keyboard="Numeric" PlaceholderColor="#AFAFAF"/>
+                    <Entry Placeholder="Year 8" x:Name="year8txt" TextColor="#C0C0C0" Keyboard="Numeric" PlaceholderColor="#AFAFAF"/>
+
+                    <Button Text="Submit" Clicked="submitBtnforSummary_clicked" TextColor="#EAEAEA" BackgroundColor="#63C8F6" Margin="20"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

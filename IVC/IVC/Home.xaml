@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IVC.Pages.Home" Title="Home" IconImageSource="icon.png" BackgroundColor="#000000">
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout x:Name="mainstack">
+                <StackLayout Padding="20">
+                    <Label Text="Calculator" FontSize="Title"
+                        HorizontalOptions="CenterAndExpand" x:Name="test" TextColor="#EAEAEA"/>
+                    <Entry Placeholder="Company" x:Name="companytxt" PlaceholderColor="#AFAFAF" TextColor="#C0C0C0"/>
+                    <Entry Placeholder="Stock Symbol" x:Name="stockSymboltxt" PlaceholderColor="#AFAFAF" TextColor="#C0C0C0"/>
+                    <Entry Placeholder="Share Price" x:Name="sharePricetxt" TextColor="#C0C0C0" Keyboard="Numeric" PlaceholderColor="#AFAFAF"/>
+                    <Entry Placeholder="Market Cap" x:Name="marketCaptxt" TextColor="#C0C0C0" Keyboard="Numeric" PlaceholderColor="#AFAFAF"/>
+                    <Entry Placeholder="Number of years to calculate" x:Name="yearNumbertxt" TextColor="#C0C0C0" Keyboard="Numeric" PlaceholderColor="#AFAFAF"/>
+                    <Entry Placeholder="Multiplying Factor (25/30)" x:Name="multiplyingFactor" TextColor="#C0C0C0" Keyboard="Numeric" PlaceholderColor="#AFAFAF"/>
+                    <Button Text="Submit" Clicked="Submit_Clicked" TextColor="#EAEAEA" BackgroundColor="#63C8F6" Margin="20"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

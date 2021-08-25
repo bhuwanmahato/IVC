@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IVC.CalculatorPage3" BackgroundColor="#000000">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20">
+                <Label x:Name="abc" Text="Summary" HorizontalOptions="CenterAndExpand" FontSize="Title" Padding="10" TextColor="#EAEAEA"/>
+                <Label x:Name="companyName" HorizontalOptions="StartAndExpand" FontSize="Small" Padding="10" TextColor="#C0C0C0"/>
+                <Label x:Name="stockSymbol" HorizontalOptions="StartAndExpand" FontSize="Small" Padding="10" TextColor="#C0C0C0"/>
+                <Label x:Name="sharePrice" HorizontalOptions="StartAndExpand" FontSize="Small" Padding="10" TextColor="#C0C0C0"/>
+                <Label x:Name="marketCap" HorizontalOptions="StartAndExpand" FontSize="Small" Padding="10" TextColor="#C0C0C0"/>
+                <Label x:Name="totalShares" HorizontalOptions="StartAndExpand" FontSize="Small" Padding="10" TextColor="#C0C0C0"/>
+                <Label x:Name="averageIncome" HorizontalOptions="StartAndExpand" FontSize="Small" Padding="10" TextColor="#C0C0C0"/>
+                <Label x:Name="intrinsicValue" HorizontalOptions="StartAndExpand" FontSize="Small" Padding="10" TextColor="#C0C0C0"/>
+                <Label x:Name="PercentageUpDown" HorizontalOptions="StartAndExpand" FontSize="Small"  Padding="10" TextColor="#C0C0C0"/>
+                <Label x:Name="Multiplier" HorizontalOptions="StartAndExpand" FontSize="Small"  Padding="10" TextColor="#C0C0C0"/>
+
+                <Button Text="Save" Clicked="SaveBtnClicked" TextColor="#EAEAEA" BackgroundColor="#63C8F6" Margin="20"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
