@@ -1,15 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:model="clr-namespace:IVC.Model"
              x:Class="IVC.Pages.View" Title="View" BackgroundColor="#000000">
     <ContentPage.Content>
         <StackLayout Padding="20">
             <Label Text="Company Log" TextColor="#EAEAEA" FontSize="Title" 
-                HorizontalOptions="CenterAndExpand" />
-            <ListView x:Name="CompanyList">
+                HorizontalOptions="CenterAndExpand"/>
+            <ListView 
+                x:Name="CompanyList"
+                HasUnevenRows="True"
+                IsPullToRefreshEnabled="True"
+                SelectionMode="None"
+                SeparatorVisibility="None">
                 <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextCell Text="{Binding CompanyName}" />
+                    <DataTemplate >
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical" Padding="10" HorizontalOptions="CenterAndExpand">
+                                <Grid BackgroundColor="Brown">
+                                    <StackLayout>
+                                        <Label Text="{Binding CompanyName}" TextColor="#C0C0C0"/>
+                                        <!--<Label Text="{Binding SharePrice}" TextColor="#C0C0C0"/>
+                                        <Label Text="{Binding IntrinsicValue}" TextColor="#C0C0C0"/>
+                                        <Label Text="{Binding PercentageUpDown}" TextColor="#C0C0C0"/>
+                                        <Label Text="{Binding Multiplier}" TextColor="#C0C0C0"/>-->
+                                    </StackLayout>
+                                </Grid>
+                            </StackLayout>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
