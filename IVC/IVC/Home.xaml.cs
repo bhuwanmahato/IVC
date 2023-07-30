@@ -3,6 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HtmlAgilityPack;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
+using System.Net;
+using System.Text;
+using System.IO;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -16,9 +23,15 @@ namespace IVC.Pages
         {
             InitializeComponent();
         }
-
+        private static async Task<string> CallUrl(string fullUrl)
+        {
+            HttpClient client = new HttpClient();
+            var response = await client.GetStringAsync(fullUrl);
+            return response;
+        }
         private void Submit_Clicked(object sender, EventArgs e)
         {
+
             try
             {
                 decimal marketCap, sharePrice, totalShares;

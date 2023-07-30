@@ -7,7 +7,7 @@
         <ScrollView>
             <StackLayout x:Name="mainstack">
                 <StackLayout Padding="20">
-                    <Label Text="Calculator" FontSize="Title"
+                    <Label Text="TradeCal" FontSize="Title"
                         HorizontalOptions="CenterAndExpand" x:Name="test" TextColor="#EAEAEA"/>
                     <Entry Placeholder="Company" x:Name="companytxt" PlaceholderColor="#AFAFAF" TextColor="#C0C0C0"/>
                     <Entry Placeholder="Stock Symbol" x:Name="stockSymboltxt" PlaceholderColor="#AFAFAF" TextColor="#C0C0C0"/>
